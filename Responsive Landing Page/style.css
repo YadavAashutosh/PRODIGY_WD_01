@@ -1,0 +1,131 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: #f5f5f5;
+  color: #111;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+header.scrolled {
+  background: #202020;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.logo {
+  font-size: 0.9rem;
+}
+nav a {
+  color: white;
+  margin-left: 1.2rem;
+  font-size: 0.6rem;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 85vh;
+  background: linear-gradient(to right, #7a7676, #0c0c0c);
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  text-align: center;
+  position: relative;
+}
+.hero-text h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 0.6rem;
+}
+
+/* Decorations */
+.decor {
+  position: absolute;
+  opacity: 0.05;
+}
+.decor-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #070707;
+  top: 20px;
+  left: 30px;
+}
+.decor-dots {
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(#f0eeee 2px, transparent 2px);
+  background-size: 10px 10px;
+  bottom: 30px;
+  right: 40px;
+}
+
+/* Fieldset Sections */
+fieldset {
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  border: 3px dashed #222;
+  background: #fff;
+}
+legend {
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  background: #fff;
+  color: #222;
+}
+
+/* Features */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.feature-card {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  min-width: 140px;
+  border-radius: 8px;
+  font-size: 0.55rem;
+  box-shadow: 2px 2px 0 #999;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+/* Footer */
+footer {
+  background: #101010;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.6rem;
+}
